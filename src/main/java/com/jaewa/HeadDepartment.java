@@ -3,6 +3,12 @@ package com.jaewa;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+ * 	Composite ha elementi foglie
+ * 	Implementa i metodi dei componenti (Component) base 
+ *	Defininsce le operazioni relative ai figli
+ */
+
 public class HeadDepartment implements Department {
 
 	private Integer id;

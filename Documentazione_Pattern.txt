@@ -1,0 +1,22 @@
+1 -> Component
+    -   Questa è un'interfaccia o una classe astratta che dichiara l'interfaccia comune per tutti gli oggetti nel composito,
+        sia per quelli semplici (foglia) che per quelli complessi (composto).
+
+    -   Definisce operazioni comuni che possono essere eseguite sugli oggetti e operazioni che permettono di gestire i figli,
+        come add(), remove(), e getChild().
+
+2 -> Leaf
+    -   Rappresenta gli oggetti "foglia" della composizione, cioè quelli che non hanno figli.
+
+    -   Implementa l'interfaccia del Component, ma generalmente non implementa le operazioni per gestire i figli, perché non ne ha.
+
+    -   Definisce il comportamento per gli oggetti primitivi nella composizione.
+
+3 -> Composit 
+    -   Rappresenta i componenti "ramo" della composizione, cioè quelli che possono avere figli.
+
+    -   Implementa l'interfaccia del Component e contiene una lista di sotto-componenti che possono essere Leaf o altri Composite.
+
+    -   Implementa le operazioni per gestire i figli, come add(), remove(), e getChild().
+
+    -   Definisce il comportamento per i componenti complessi che contengono altri componenti.

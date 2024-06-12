@@ -1,5 +1,9 @@
 package com.jaewa;
 
+/*
+ *	Foglia -> Implementa i metodi dei componenti base e non ha riferimenti ad altri oggetti
+ */
+
 public class FinancialDepartment implements Department {
 
     private Integer id;
