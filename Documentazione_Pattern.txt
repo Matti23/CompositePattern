@@ -20,3 +20,30 @@
     -   Implementa le operazioni per gestire i figli, come add(), remove(), e getChild().
 
     -   Definisce il comportamento per i componenti complessi che contengono altri componenti.
+
+
+                +---------------------+
+                |      Component      |
+                +---------------------+
+                | +operation(): void  |
+                +---------------------+
+                | +add(Component): void  |
+                | +remove(Component): void  |
+                | +getChild(int): Component |
+                +---------------------+
+                          /_\
+                           |
+                           |
+           +---------------+---------------+
+           |                               |
++---------------------+          +---------------------+
+|       Leaf          |          |     Composite       |
++---------------------+          +---------------------+
+| +operation(): void  |          | +operation(): void  |
++---------------------+          +---------------------+
+                                  | +add(Component): void  |
+                                  | +remove(Component): void  |
+                                  | +getChild(int): Component |
+                                  +---------------------+
+                                  | -children: List<Component> |
+                                  +---------------------+
